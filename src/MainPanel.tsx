@@ -48,8 +48,8 @@ export class MainPanel extends PureComponent<Props, State> {
           padding: 10,
         }}
       >
-        <CircularProgressbarWithChildren value={num > 100 ? 100 : (num / 100) * 100}>
-          {num < 70 ? (
+        <CircularProgressbarWithChildren value={num >= 3 ? 100 : (num / 3) * 100}>
+          {num < 3 ? (
             <img style={{ width: width / 2.2, transform: 'translateY(5px)' }} src={GoIcon} />
           ) : (
             <img style={{ width: width / 2.2, transform: 'translateY(5px)' }} src={StopIcon} />

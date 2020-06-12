@@ -1334,8 +1334,8 @@ function (_super) {
         padding: 10
       }
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_circular_progressbar__WEBPACK_IMPORTED_MODULE_4__["CircularProgressbarWithChildren"], {
-      value: num > 100 ? 100 : num / 100 * 100
-    }, num < 70 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+      value: num >= 3 ? 100 : num / 3 * 100
+    }, num < 3 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
       style: {
         width: width / 2.2,
         transform: 'translateY(5px)'
